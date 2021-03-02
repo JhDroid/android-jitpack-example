@@ -1,2 +1,3 @@
+include ':exlibrary'
 include ':app'
 rootProject.name = "jitpack-example"
