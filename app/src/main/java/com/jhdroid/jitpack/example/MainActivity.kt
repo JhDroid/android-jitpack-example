@@ -2,6 +2,7 @@ package com.jhdroid.jitpack.example
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import com.jhdroid.jitpack.exlibrary.Example
 
 class MainActivity : AppCompatActivity() {
@@ -10,7 +11,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val example = Example()
-        example.getString()
-        example.getBlogUrl()
+        Log.d("jhdroid", "example library get string : ${example.getString()}")
+        Log.d("jhdroid", "example library get blog url : ${example.getBlogUrl()}")
     }
 }
